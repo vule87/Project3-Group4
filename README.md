@@ -1,6 +1,6 @@
 # Project3-Group4
 
-Proposal: My Life Coach App
+Proposal: My Life Advisors App
 
 Purpose: The app will have multiple characters who will display advises for users on different aspects of life. This could potentially help users to make better life decisions, have a good laugh, be motivated or inspired.
 
