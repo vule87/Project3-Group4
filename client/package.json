@@ -1,8 +1,7 @@
 {
-  "name": "black-dashboard-react",
+  "name": "my-life-advisor",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://creativetimofficial.github.io/black-dashboard-react/#/dashboard",
   "dependencies": {
     "@types/react": "16.4.16",
     "bootstrap": "4.1.3",
