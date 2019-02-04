@@ -21,7 +21,7 @@ class UserProfile extends React.Component {
       <>
         <div className="content">
           <Row>
-            <Col md="8">
+            <Col md="12">
               <Card>
                 <CardHeader>
                   <h5 className="title">Edit Profile</h5>
@@ -31,20 +31,9 @@ class UserProfile extends React.Component {
                     <Row>
                       <Col className="pr-md-1" md="5">
                         <FormGroup>
-                          <label>Company (disabled)</label>
-                          <Input
-                            defaultValue="Creative Code Inc."
-                            disabled
-                            placeholder="Company"
-                            type="text"
-                          />
-                        </FormGroup>
-                      </Col>
-                      <Col className="px-md-1" md="3">
-                        <FormGroup>
                           <label>Username</label>
                           <Input
-                            defaultValue="michael23"
+                            defaultValue=""
                             placeholder="Username"
                             type="text"
                           />
@@ -55,7 +44,17 @@ class UserProfile extends React.Component {
                           <label htmlFor="exampleInputEmail1">
                             Email address
                           </label>
-                          <Input placeholder="mike@email.com" type="email" />
+                          <Input placeholder="email@email.com" type="email" />
+                        </FormGroup>
+                      </Col>
+                      <Col className="px-md-1" md="3">
+                        <FormGroup>
+                          <label>Password</label>
+                          <Input
+                            defaultValue=""
+                            placeholder="Password"
+                            type="password"
+                          />
                         </FormGroup>
                       </Col>
                     </Row>
@@ -64,8 +63,8 @@ class UserProfile extends React.Component {
                         <FormGroup>
                           <label>First Name</label>
                           <Input
-                            defaultValue="Mike"
-                            placeholder="Company"
+                            defaultValue=""
+                            placeholder="First Name"
                             type="text"
                           />
                         </FormGroup>
@@ -74,14 +73,14 @@ class UserProfile extends React.Component {
                         <FormGroup>
                           <label>Last Name</label>
                           <Input
-                            defaultValue="Andrew"
+                            defaultValue=""
                             placeholder="Last Name"
                             type="text"
                           />
                         </FormGroup>
                       </Col>
                     </Row>
-                    <Row>
+                    {/* <Row>
                       <Col md="12">
                         <FormGroup>
                           <label>Address</label>
@@ -135,7 +134,7 @@ class UserProfile extends React.Component {
                           />
                         </FormGroup>
                       </Col>
-                    </Row>
+                    </Row> */}
                   </Form>
                 </CardBody>
                 <CardFooter>
@@ -145,7 +144,7 @@ class UserProfile extends React.Component {
                 </CardFooter>
               </Card>
             </Col>
-            <Col md="4">
+            {/* <Col md="4">
               <Card className="card-user">
                 <CardBody>
                   <CardText />
@@ -184,7 +183,7 @@ class UserProfile extends React.Component {
                   </div>
                 </CardFooter>
               </Card>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </>
