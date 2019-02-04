@@ -117,7 +117,7 @@ class Dashboard extends React.Component {
                   <h5 className="card-category text-center FONT">
                     Chuck Norris
                   </h5>
-                  <CardTitle tag="h4">{this.state.chuckQuotes}</CardTitle>
+                  <CardTitle tag="h4"></CardTitle>
                 </CardHeader>
                 <CardBody>
                   <img
@@ -145,7 +145,6 @@ class Dashboard extends React.Component {
                     The Great Designer
                   </h5>
                   <CardTitle tag="h4">
-                    {this.state.designerQuotes}
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -173,7 +172,7 @@ class Dashboard extends React.Component {
                   <h5 className="card-category text-center FONT">
                     Peaceful Budda
                   </h5>
-                  <CardTitle tag="h4">{this.state.buddaQuotes}</CardTitle>
+                  <CardTitle tag="h4"></CardTitle>
                 </CardHeader>
                 <CardBody>
                   <img
@@ -189,6 +188,77 @@ class Dashboard extends React.Component {
                     >
                       Advise
                     </button>
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="4">
+              <Card className="card-chart">
+                <CardHeader>
+                  {/* <h5 className="card-category text-center FONT">
+                    The Great Designer
+                  </h5> */}
+                  <CardTitle tag="h4">
+                    {this.state.chuckQuotes}
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="text-center">
+                    {/* <button
+                      // onClick={this.handleDesignerQuotes}
+                      type="button"
+                      className="btn btn-danger Advise"
+                    >
+                      Favorite
+                    </button> */}
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col lg="4">
+              <Card className="card-chart">
+                <CardHeader>
+                  {/* <h5 className="card-category text-center FONT">
+                    The Great Designer
+                  </h5> */}
+                  <CardTitle tag="h4">
+                    {this.state.designerQuotes}
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="text-center">
+                    {/* <button
+                      // onClick={this.handleDesignerQuotes}
+                      type="button"
+                      className="btn btn-danger Advise"
+                    >
+                      Favorite
+                    </button> */}
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col lg="4">
+              <Card className="card-chart">
+                <CardHeader>
+                  {/* <h5 className="card-category text-center FONT">
+                    The Great Designer
+                  </h5> */}
+                  <CardTitle tag="h4">
+                    {this.state.buddaQuotes}
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="text-center">
+                    {/* <button
+                      // onClick={this.handleDesignerQuotes}
+                      type="button"
+                      className="btn btn-danger Advise"
+                    >
+                      Favorite
+                    </button> */}
                   </div>
                 </CardBody>
               </Card>
