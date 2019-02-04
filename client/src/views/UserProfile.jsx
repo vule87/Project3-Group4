@@ -24,7 +24,7 @@ class UserProfile extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <h5 className="title">Edit Profile</h5>
+                  <h5 className="title">Sign Up</h5>
                 </CardHeader>
                 <CardBody>
                   <Form>
