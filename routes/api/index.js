@@ -2,12 +2,16 @@ const path = require("path");
 const router = require("express").Router();
 const favoriteRoutes = require("./favorites");
 const chuckRoutes = require("./chuck.js");
+const designerRoutes = require("./designer");
+const buddaRoutes = require("./budda");
 
-// Book routes
-router.use("/books", favoriteRoutes);
+router.use("/favorites", favoriteRoutes);
 
-// Google Routes
 router.use("/chuck", chuckRoutes);
+
+router.use("/designer", designerRoutes);
+
+router.use("/budda", buddaRoutes);
 
 // For anything else, render the html page
 router.use(function (req, res) {
