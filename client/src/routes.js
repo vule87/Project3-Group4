@@ -1,6 +1,7 @@
 import Dashboard from "views/Dashboard.jsx";
 import TableList from "views/TableList.jsx";
 import UserProfile from "views/UserProfile.jsx";
+import Login from "./views/Login";
 
 var routes = [
   {
@@ -25,6 +26,14 @@ var routes = [
     rtlName: "قائمة الجدول",
     icon: "tim-icons icon-puzzle-10",
     component: TableList,
+    layout: "/admin"
+  },
+  {
+    path: "/login",
+    name: "Log in",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-puzzle-10",
+    component: Login,
     layout: "/admin"
   }
 ];
