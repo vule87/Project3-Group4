@@ -47,24 +47,29 @@ class Dashboard extends React.Component {
 
   getChuck = () => {
     API.getChuck()
-      .then(res =>
+      .then(res => {
         this.setState({
-          chuckQuotes: res.data.value
+          
+          chuckQuotes: res.data
         })
-      )
-      .catch(() =>
+      })
+      .catch(err=>{
+        console.log(err)
         this.setState({
-          chuckQuotes: "Oops! An unexpected error occured. Please try again."
-        })
+          chuckQuotes:
+            "Oops! An unexpected error occured. Please try again."
+        });
+      }
+        
       );
   };
   getDesigner = () => {
     API.getDesigner()
-      .then(res =>
+      .then(res =>{
         this.setState({
-          designerQuotes: res.data[0].content
+          designerQuotes: res.data
         })
-      )
+      })
       .catch(() =>
         this.setState({
           designerQuotes:
@@ -74,11 +79,11 @@ class Dashboard extends React.Component {
   };
   getBudda = () => {
     API.getBudda()
-      .then(res =>
+      .then(res => {
         this.setState({
           buddaQuotes: res.data.slip.advice
         })
-      )
+      })
       .catch(() =>
         this.setState({
           buddaQuotes:
@@ -103,7 +108,6 @@ class Dashboard extends React.Component {
                         help you to make better life decisions. Explore and
                         have fun!
                       </CardTitle>
-                      <CardBody>Vu & AJ</CardBody>
                     </Col>
                   </Row>
                 </CardHeader>

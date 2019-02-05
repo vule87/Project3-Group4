@@ -3,6 +3,7 @@ import axios from 'axios';
 export default {
   
   getChuck: function() {
+    console.log("api chuck logging");
     return axios.get("/api/chuck");
   },
   
@@ -11,7 +12,7 @@ export default {
   },
   
   getBudda: function(id) {
-    return axios.delete("/api/budda");
+    return axios.get("/api/budda");
   },
 
 };
