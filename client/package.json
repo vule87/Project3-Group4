@@ -2,6 +2,7 @@
   "name": "my-life-advisor",
   "version": "1.0.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@types/react": "16.4.16",
     "bootstrap": "4.1.3",

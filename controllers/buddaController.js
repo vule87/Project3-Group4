@@ -4,7 +4,7 @@ module.exports = {
   findAll: function(req, res) {
     axios
       .get("https://api.adviceslip.com/advice")
-      .then(results => res.json(results.data.value))
+      .then(results => res.json(results.data))
       .catch(err => res.status(422).json(err));
   }
 };
